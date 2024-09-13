@@ -9,10 +9,7 @@ public class SpringBootFristApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context =SpringApplication.run(SpringBootFristApplication.class, args);
-		Alien obj = context.getBean(Alien.class);
-		obj.code();
-		//Laptop obj = context.getBean(Laptop.class);
-		//obj.compile();
+		System.out.println("Hello World");
 	}
 
 }
