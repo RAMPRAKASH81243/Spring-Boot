@@ -11,8 +11,7 @@ public class SpringBootFristApplication {
 		ApplicationContext context =SpringApplication.run(SpringBootFristApplication.class, args);
 		Alien obj = context.getBean(Alien.class);
 		obj.code();
-		//Laptop obj = context.getBean(Laptop.class);
-		//obj.compile();
+		
 	}
 
 }
