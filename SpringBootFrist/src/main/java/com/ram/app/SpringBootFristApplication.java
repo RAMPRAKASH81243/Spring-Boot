@@ -2,13 +2,17 @@ package com.ram.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class SpringBootFristApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootFristApplication.class, args);
-		System.out.println("hello world");
+		ApplicationContext context =SpringApplication.run(SpringBootFristApplication.class, args);
+		Alien obj = context.getBean(Alien.class);
+		obj.code();
+		//Laptop obj = context.getBean(Laptop.class);
+		//obj.compile();
 	}
 
 }
