@@ -36,21 +36,9 @@ public class StudentRepository {
 	}
 
 	public List<Student> findAll() {
-		
-		String sql = "select * from student";
-		
-		return jdbc.query(sql, (rs, rowNum) -> {
-			
-			Student s = new Student();
-			s.setRollNo(rs.getInt("rollno"));
-			s.setName(rs.getString("name"));
-			s.setMarks(rs.getInt("marks"));
-			
-			return s;
-	});
-		
-		//List<Student> students = new ArrayList<>();
-		//return students;
+	
+		List<Student> students = new ArrayList<>();
+		return students;
 	}
 	
 }
